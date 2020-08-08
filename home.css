@@ -1,0 +1,50 @@
+html{
+    height: 100%;
+    border: 2px solid black;
+}
+
+ul {list-style-type: none;}
+body {
+    font-family: Verdana, sans-serif;
+    height: 97%;
+    width: 98%;
+    margin-left: 1%;
+
+}
+
+#headerText{
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    height: 8%;
+    color: darkblue;
+}
+
+/* Month header */
+.navBar {
+    padding: 15px 2.5%;
+    width: 95%;
+    background: #1abc9c;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 5%;
+    align-items: center;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+#mainContent {
+    background: #eee;
+    background-color:#ddd;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.5% 2%;
+    flex-wrap: wrap;
+    height: 78%;
+    margin-top: 0%;
+  
+  }
