@@ -1,50 +1,131 @@
 html{
-    height: 100%;
-    border: 2px solid black;
-}
 
-ul {list-style-type: none;}
+}
 body {
-    font-family: Verdana, sans-serif;
-    height: 97%;
-    width: 98%;
-    margin-left: 1%;
-
-}
-
-#headerText{
-    font-size: 40px;
-    width: 100%;
-    text-align: center;
-    height: 8%;
-    color: darkblue;
-}
-
-/* Month header */
-.navBar {
-    padding: 15px 2.5%;
-    width: 95%;
-    background: #1abc9c;
-    text-align: center;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    height: 5%;
+    margin: 0px;
+    background-image: linear-gradient(to bottom right, #1097e0, lightgreen);
+    /* background-image: radial-gradient(lightgreen, #1097e0); */
+
+}
+
+#leftCol{
+    height: 100%;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: 0%;
-    margin-bottom: 1%;
+    /* justify-content: space-evenly; */
+    background-color:rgba(255, 255, 255, 0.45)
 }
 
-#mainContent {
-    background: #eee;
-    background-color:#ddd;
-    width: 96%;
+#rightCol{
+    height: 100%;
+    width: 74%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0.5% 2%;
-    flex-wrap: wrap;
-    height: 78%;
-    margin-top: 0%;
-  
-  }
+    flex-direction: column;
+    align-items: center;
+    /* background-image: linear-gradient(to top right, #1097e0, lightgreen); */
+}
+
+.section{
+    margin-bottom: 11%;
+    font-size: 18px;
+}
+
+#logo{
+    margin-top: -13%;
+    width: 90%;
+}
+
+#description{
+    margin-top: -15%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 11%;
+}
+
+#address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact{
+    width: 100%;
+}
+
+#schedule{
+    width: 100%;
+}
+
+#contactButton{
+    color: #0a42cf;
+    border: 2px solid #0a42cf;
+}
+
+#scheduleButton{
+    color: #0acf42;
+    border: 2px solid #0acf42;
+}
+
+#topper{
+    width: 80%;
+    margin-top: 7%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#historyTopper{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 4%;
+    width: 80%;
+    /* margin-right: 45%; */
+}
+
+#paragraph{
+    margin-top: 1%;
+    width: 75%;
+    font-size: 21px;
+    font-weight: bold;
+    
+}
+
+#history{
+    margin-top: 2%;
+    width: 75%;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#services{
+    margin-top: 3%;
+    width: 80%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#servicesList{
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+li{
+    line-height: 125%;
+}
+
+button{
+    border-radius: 15px;
+    width: 80%;
+    line-height: 150%;
+    margin-left: 10%;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
