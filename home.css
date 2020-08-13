@@ -7,7 +7,8 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0px;
-    background-image: linear-gradient(to bottom right, #1097e0, lightgreen);
+
+    /* background-image: linear-gradient(to bottom right, #1097e0, lightgreen); */
     /* background-image: radial-gradient(lightgreen, #1097e0); */
 
 }
@@ -19,7 +20,9 @@ body {
     flex-direction: column;
     align-items: center;
     /* justify-content: space-evenly; */
-    background-color:rgba(255, 255, 255, 0.45)
+    background-color: #fff0de;
+    /* background-color: #c7ffdd; */
+
 }
 
 #rightCol{
@@ -30,6 +33,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-image: url(background.jpg); */
+    background-color:rgba(184,197,222, 0.9);
+
     /* background-image: linear-gradient(to top right, #1097e0, lightgreen); */
 }
 
@@ -128,4 +134,14 @@ button{
     background-color: white;
     font-size: 16px;
     font-weight: bold;
+}
+
+#background{
+    position: absolute;
+    /* opacity: 0.1; */
+    top:0%;
+    left: 23%;
+    width: 77%;
+    height: 100%;
+    z-index: -2;
 }
