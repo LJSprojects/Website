@@ -9,11 +9,20 @@ function sendMail(){
 }
 
 function sizeColumns(){
-    var width = screen.width - 300;
-
-    console.log(width);
+    var width = screen.width;
+    if(width < 1126){
+        return;
+    }
+    width = width - 300;
+    var height = screen.height;
+    console.log(width, height);
     document.getElementById("rightCol").style.width = width + "px" ;
     document.getElementById("background").style.width = width + "px";
+
+    document.getElementById("rightCol").style.bottom = "0px";
+    document.getElementById("background").style.bottom = "0px";
+    // document.getElementById("leftCol").style.bottom = "0px";
+
 }
 
 function scrollCheck(){
