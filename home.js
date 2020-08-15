@@ -1,5 +1,6 @@
 function toCalendar(){
     console.log("go to calendar page")
+    window.location.href = "calendar\\calendar.html";
 }
 
 function sendMail(){
