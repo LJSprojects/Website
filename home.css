@@ -6,171 +6,582 @@ body,html {
 html{
     font-family: Lucida Bright,Georgia,serif; 
 }
-body {
-    height: 100%;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-     /* overflow-x: auto; */
-    /* overflow-y: hidden;  */
 
-
-    /* background-image: linear-gradient(to bottom right, #1097e0, lightgreen); */
-    /* background-image: radial-gradient(lightgreen, #1097e0); */
-
-}
-
-#leftCol{
-    position: fixed;
-    height: 100%;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-evenly; */
-    /* background-color: #fff0de; */
-    /* background-color: #f7f5e6; */
-    background-color: #d5d5d5;
-    overflow: hidden;
-    z-index: 5;
-}
-
-#rightCol{
-    position: absolute;
-    left: 300px;
-    height: 100%;
-
-    /* width: 74%; */
-    overflow-y: hidden;
-    overflow: auto;
-    /* min-width: 1224px; */
-    /* padding-right: 1.5%; */
-    /* padding-left: 1.5%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:rgba(184,197,222, 0.85);
-    /* background-color:rgba(82,101,143,0.85); */
-    /* background-color:rgba(109,121,147,0.85) */
-}
-
-.section{
-    margin-bottom: 11%;
-    font-size: 18px;
-}
-
-#logo{
-    margin-top: -15%;
-    width: 90%;
-}
-
-#description{
-    margin-top: -15%;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 11%;
-}
-
-#address{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contact{
-    width: 100%;
-}
-
-#schedule{
-    width: 100%;
-}
-
-#contactButton{
-    color: #0a42cf;
-    border: 2px solid #0a42cf;
-}
-#contactButton:hover{
-    background-color: #a6deff;
-}
-
-#scheduleButton{
-    color: #0f8a32;
-    border: 2px solid #0f8a32;
-}
-#scheduleButton:hover{
-    background-color: #8cff9d;
-}
-
-#topper{
-    width: 80%;
-    margin-top: 7%;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-#historyTopper{
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 4%;
-    width: 80%;
-    /* margin-right: 45%; */
-}
-
-#paragraph{
-    margin-top: 1%;
-    width: 75%;
-    font-size: 21px;
-    font-weight: bold;
-    
-}
-
-#history{
-    margin-top: 2%;
-    width: 75%;
-    font-size: 21px;
-    font-weight: bold;
-}
-
-#services{
-    margin-top: 3%;
-    width: 80%;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#servicesList{
-    margin-left: 2%;
-    margin-top: 1%;
-}
-
-li{
-    line-height: 125%;
-}
-
-button{
-    border-radius: 15px;
-    width: 80%;
-    line-height: 150%;
-    margin-left: 10%;
-    background-color: white;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 4px 4px 2px grey;
-    outline: none;
-}
-
-#background{
-    position: absolute;
-    overflow: auto;
-    top:0px;
-    left: 300px;
-    height: 100%;
-    z-index: -2;
-}
-
-/* @media screen and (min-width: 1173px) {
-    #background{
-        left: 270px !important;
+@media screen and (max-width: 499px) {
+    #web{
+        display: none;
     }
 
-} */
+    #mobile{
+        display: inline;
+        /* height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column; */
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+        /* display: flex;
+        flex-direction: column; */
+    }
+    #leftCol{
+        position: absolute;
+        top: 0%;
+        height: 18%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #d5d5d5;
+        z-index: 5;
+    }
+
+    #buttons{
+        position: absolute;
+        top: 17.75%;
+        height: 6%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #d5d5d5;
+        padding-bottom: 2%;
+        z-index: 4;
+    }
+
+    #rightCol{
+        position: absolute;
+        top: 24%;
+        height: 76%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgba(184,197,222, 0.85);
+        overflow: scroll;
+        /* z-index: 3; */
+    }
+
+    #background{
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        z-index: -2;
+    }
+
+    .section{
+        margin-bottom: 1vh;
+        font-size: 3.7vw;
+    }
+
+    #logoAppointment{
+        height: 80%;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contactInfo{
+        height: 100%;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #logo{
+        margin-top: -12%;
+        margin-bottom: -15%;
+        width: 90%;
+    }
+
+    #description{
+        margin-top: 5%;
+        font-size: 3.6vw;
+        font-weight: bold;
+        margin-bottom: 5%;
+    }
+
+    #address{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact{
+        width: 100%;
+    }
+
+    #schedule{
+        width: 100%;
+    }
+
+    #contactButton{
+        color: #0a42cf;
+        border: 2px solid #0a42cf;
+    }
+    #contactButton:hover{
+        background-color: #a6deff;
+    }
+
+    #scheduleButton{
+        color: #0f8a32;
+        border: 2px solid #0f8a32;
+    }
+    #scheduleButton:hover{
+        background-color: #8cff9d;
+    }
+
+    #topper{
+        width: 90%;
+        /* margin-left: 5%; */
+        margin-top: 7%;
+        font-size: 5vw;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #historyTopper{
+        font-size: 4.2vw;
+        font-weight: bold;
+        margin-top: 4%;
+        width: 80%;
+        /* margin-right: 45%; */
+    }
+
+    #paragraph{
+        margin-top: 1%;
+        width: 75%;
+        font-size: 3.6vw;
+        font-weight: bold;
+        
+    }
+
+    #history{
+        margin-top: 2%;
+        width: 75%;
+        font-size: 3.6vw;
+        font-weight: bold;
+    }
+
+    #services{
+        margin-top: 3%;
+        width: 80%;
+        font-size: 4.3vw;
+        font-weight: bold;
+    }
+
+    #servicesList{
+        margin-left: 2%;
+        margin-top: 1%;
+    }
+
+    li{
+        line-height: 125%;
+    }
+
+    button{
+        border-radius: 15px;
+        width: 90%;
+        line-height: 200%;
+        margin-left: 5%;
+        background-color: white;
+        font-size: 3vw;
+        font-weight: bold;
+        box-shadow: 4px 4px 2px grey;
+        outline: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 500px) {
+    #web{
+        display: none;
+    }
+
+    #mobile{
+        display: inline;
+        /* height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column; */
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+        /* display: flex;
+        flex-direction: column; */
+    }
+    #leftCol{
+        position: absolute;
+        top: 0%;
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #d5d5d5;
+        z-index: 5;
+    }
+
+    #buttons{
+        position: absolute;
+        top: 20%;
+        height: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #d5d5d5;
+        padding-bottom: 2%;
+        z-index: 4;
+    }
+
+    #rightCol{
+        position: absolute;
+        top: 26%;
+        height: 74%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgba(184,197,222, 0.85);
+        overflow: scroll;
+        /* z-index: 3; */
+    }
+
+    #background{
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        z-index: -2;
+    }
+
+    .section{
+        margin-bottom: 0.75vh;
+        font-size: 2.9vw;
+    }
+
+    #logoAppointment{
+        height: 80%;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contactInfo{
+        height: 100%;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    #logo{
+        margin-top: -12%;
+        margin-bottom: -15%;
+        width: 90%;
+    }
+    
+    #description{
+        margin-top: 5%;
+        font-size: 3.6vw;
+        font-weight: bold;
+        margin-bottom: 5%;
+    }
+    
+    #address{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contact{
+        width: 100%;
+    }
+    
+    #schedule{
+        width: 100%;
+    }
+    
+    #contactButton{
+        color: #0a42cf;
+        border: 2px solid #0a42cf;
+    }
+    #contactButton:hover{
+        background-color: #a6deff;
+    }
+    
+    #scheduleButton{
+        color: #0f8a32;
+        border: 2px solid #0f8a32;
+    }
+    #scheduleButton:hover{
+        background-color: #8cff9d;
+    }
+    
+    #topper{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 7%;
+        font-size: 3.2vw;
+        font-weight: bold;
+    }
+    
+    #historyTopper{
+        font-size: 3.2vw;
+        font-weight: bold;
+        margin-top: 4%;
+        width: 80%;
+        /* margin-right: 45%; */
+    }
+    
+    #paragraph{
+        margin-top: 1%;
+        width: 75%;
+        font-size: 2.7vw;
+        font-weight: bold;
+        
+    }
+    
+    #history{
+        margin-top: 2%;
+        width: 75%;
+        font-size: 2.9vw;
+        font-weight: bold;
+    }
+    
+    #services{
+        margin-top: 3%;
+        width: 80%;
+        font-size: 3.2vw;
+        font-weight: bold;
+    }
+    
+    #servicesList{
+        margin-left: 2%;
+        margin-top: 1%;
+    }
+    
+    li{
+        line-height: 125%;
+    }
+    
+    button{
+        border-radius: 15px;
+        width: 80%;
+        line-height: 200%;
+        margin-left: 10%;
+        background-color: white;
+        font-size: 2.7vw;
+        font-weight: bold;
+        box-shadow: 4px 4px 2px grey;
+        outline: none;
+    }
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1126px) {
+    #mobile{
+        display: none;
+    }
+    #web{
+        display: inline;
+        /* height: 100%;
+        width: 100%; */
+    }
+    body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #leftCol{
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #d5d5d5;
+        overflow: hidden;
+        z-index: 5;
+    }
+    
+    #rightCol{
+        position: absolute;
+        left: 300px;
+        top: 0px;
+        height: 100%;
+        overflow-y: hidden;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgba(184,197,222, 0.85);
+    }
+    
+    #background{
+        position: absolute;
+        overflow: auto;
+        top:0px;
+        left: 0px;
+        height: 100%;
+        z-index: -2;
+    }
+
+    .section{
+        margin-bottom: 11%;
+        font-size: 18px;
+    }
+    
+    #logo{
+        margin-top: -20%;
+        width: 90%;
+    }
+    
+    #description{
+        margin-top: -5%;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 11%;
+    }
+    
+    #address{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contact{
+        width: 100%;
+    }
+    
+    #schedule{
+        width: 100%;
+    }
+    
+    #contactButton{
+        color: #0a42cf;
+        border: 2px solid #0a42cf;
+    }
+    #contactButton:hover{
+        background-color: #a6deff;
+    }
+    
+    #scheduleButton{
+        color: #0f8a32;
+        border: 2px solid #0f8a32;
+    }
+    #scheduleButton:hover{
+        background-color: #8cff9d;
+    }
+    
+    #topper{
+        width: 80%;
+        margin-top: 7%;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    #historyTopper{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 4%;
+        width: 80%;
+        /* margin-right: 45%; */
+    }
+    
+    #paragraph{
+        margin-top: 1%;
+        width: 75%;
+        font-size: 21px;
+        font-weight: bold;
+        
+    }
+    
+    #history{
+        margin-top: 2%;
+        width: 75%;
+        font-size: 21px;
+        font-weight: bold;
+    }
+    
+    #services{
+        margin-top: 3%;
+        width: 80%;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    #servicesList{
+        margin-left: 2%;
+        margin-top: 1%;
+    }
+    
+    li{
+        line-height: 125%;
+    }
+    
+    button{
+        border-radius: 15px;
+        width: 80%;
+        line-height: 150%;
+        margin-left: 10%;
+        background-color: white;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 4px 4px 2px grey;
+        outline: none;
+    }
+}
