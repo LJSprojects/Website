@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="calendar.css">
+    <script src="calendar.js"></script>
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script> -->
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDfKf_XOPHfuVO4Qp_IyUKuoRgrEcdeZVU",
+    authDomain: "ljsprojects.firebaseapp.com",
+    databaseURL: "https://ljsprojects.firebaseio.com",
+    projectId: "ljsprojects",
+    storageBucket: "ljsprojects.appspot.com",
+    messagingSenderId: "808827301077",
+    appId: "1:808827301077:web:0162feb96f49c42342065c",
+    measurementId: "G-1GRWKPJNT9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+//   firebase.analytics();
+  var db = firebase.firestore();
+</script>
+
+
+    <head>
+        <title>LJSprojects</title>
+    </head>
+
+    <body onload="newMonth()">
+        <div id="headerText">
+            LJS Projects
+        </div>
+        <div class="month">
+            <div class="prev">
+                <Button id="buttonDown" class="invisible" onclick="monthDown()">
+                    &#10094;
+                </Button>
+            </div>
+            <div class="monthData">
+                <span id="monthName"></span> <span id="yearNum"></span>
+            </div>
+            <div class="next">
+                <Button id="buttonUp" onclick="monthUp()">
+                        &#10095;
+                </Button>
+            </div>
+        </div>
+                
+        <ul class="weekdays" id="weekdayList">
+        </ul>
+
+        <div id="dayList" class="days">
+
+        </div>
+    </body>
+
+    <div id="popupBox" class="hidden">
+        <Div>
+            <div id="popupDate">
+
+            </div>
+            <div id="popupTitle">
+                Pick a Time
+            </div>
+        </Div>
+
+        <div id="popupContent">
+
+        </div>
+
+        <div id="personalInfo">
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <input type="text" id="email" placeholder="Enter Your Email">
+        </div>
+
+        <Button id="timeConfirm" onclick=pickTime()>Confirm</Button>
+    </div>
+</html>
+
