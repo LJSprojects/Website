@@ -30,7 +30,7 @@ html{
     #leftCol{
         position: absolute;
         top: 0%;
-        height: 18%;
+        height: 22%;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -41,7 +41,7 @@ html{
 
     #buttons{
         position: absolute;
-        top: 17.75%;
+        top: 22%;
         height: 6%;
         width: 100%;
         display: flex;
@@ -55,8 +55,8 @@ html{
 
     #rightCol{
         position: absolute;
-        top: 24%;
-        height: 76%;
+        top: 29%;
+        height: 79%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -246,7 +246,7 @@ html{
     #leftCol{
         position: absolute;
         top: 0%;
-        height: 20%;
+        height: 24%;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -257,7 +257,7 @@ html{
 
     #buttons{
         position: absolute;
-        top: 20%;
+        top: 23.9%;
         height: 5%;
         width: 100%;
         display: flex;
@@ -271,8 +271,8 @@ html{
 
     #rightCol{
         position: absolute;
-        top: 26%;
-        height: 74%;
+        top: 28%;
+        height: 76%;
         width: 100%;
         display: flex;
         flex-direction: column;
