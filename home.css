@@ -7,12 +7,12 @@ html{
     font-family: Lucida Bright,Georgia,serif; 
 }
 body {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    overflow-y: hidden;
+     /* overflow-x: auto; */
+    /* overflow-y: hidden;  */
 
 
     /* background-image: linear-gradient(to bottom right, #1097e0, lightgreen); */
@@ -21,8 +21,9 @@ body {
 }
 
 #leftCol{
+    position: fixed;
     height: 100%;
-    min-width: 300px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,12 +31,19 @@ body {
     /* background-color: #fff0de; */
     /* background-color: #f7f5e6; */
     background-color: #d5d5d5;
+    overflow: hidden;
+    z-index: 5;
 }
 
 #rightCol{
+    position: absolute;
+    left: 300px;
     height: 100%;
+
     /* width: 74%; */
-    min-width: 1224px;
+    overflow-y: hidden;
+    overflow: auto;
+    /* min-width: 1224px; */
     /* padding-right: 1.5%; */
     /* padding-left: 1.5%; */
     display: flex;
@@ -152,11 +160,10 @@ button{
 
 #background{
     position: absolute;
+    overflow: auto;
     top:0px;
     left: 300px;
-    width: 1224px;
     height: 100%;
-
     z-index: -2;
 }
 
